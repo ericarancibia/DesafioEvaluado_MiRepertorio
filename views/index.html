@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="AgregarCancion">
+    <h2 class="pt-3 text-warning">&#119070; ACADEMIA E-SUEÑO - REPERTORIO &#119070;</h2>
+
+    <div class="container pt-5 w-50 text-warning">
+      <div>
+        <div class="form-group row">
+          <label for="name" class="col-sm-2 col-form-label">CANCIÓN:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="cancion" value="A dios le pido" />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="email" class="col-sm-2 col-form-label">ARTISTA: </label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="artista" value="Juanes" />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="rut" class="col-sm-2 col-form-label">TONO:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="tono" value="Em" />
+          </div>
+        </div>
+        <button onclick="nuevaCancion()" id="agregar" class="m-auto btn btn-dark">
+          Agregar
+        </button>
+        <button onclick="editarCancion()" id="editar" class="m-auto btn btn-secondary">
+          Editar
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="ListaCanciones">
+    <hr />
+    <hr />
+    <h2 class="text-warning">&#127908; TABLA DE CANCIONES &#127908;</h2>
+
+    <div class="container pt-3 w-75">
+      <table class="table text-white">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">CANCIÓN</th>
+            <th scope="col">ARTISTA</th>
+            <th scope="col">TONO</th>
+            <th scope="col">-</th>
+          </tr>
+        </thead>
+        <tbody id="cuerpo"></tbody>
+      </table>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="/js/script.js"></script>
+</body>
+
+</html>

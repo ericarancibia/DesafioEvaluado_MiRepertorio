@@ -1,0 +1,11 @@
+body {
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
+    text-align: center;
+    color: white;
+  }
+
+  table {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
